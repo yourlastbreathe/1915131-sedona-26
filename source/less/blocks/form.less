@@ -1,0 +1,124 @@
+.fieldset() {
+  display: grid;
+  grid-template-columns: 280px;
+  border: none;
+  padding: 0;
+  text-align: start;
+}
+
+.form-title() {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.radio-checkbox() {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.review {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.review__title {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.review__description {
+  margin: 0;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 53px
+}
+
+.review-form__fieldset, .opinion, .sight {
+  .fieldset();
+}
+
+.review-form__fieldset {
+  margin-bottom: 64px;
+}
+
+.review-form__title, .opinion__title, .sight__title, .emotions__title {
+  .form-title()
+}
+
+.review-form__label {
+  text-transform: uppercase;
+  text-align: start;
+  color: #333333;
+}
+
+.review-form__input {
+  width: 280px;
+  background-color: #f2f2f2;
+  padding: 16px 100px 16px 16px;
+  box-sizing: border-box;
+  border: none;
+  &::placeholder {
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.review-form__input--email, .review-form__input--phone {
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.opinion__label, .sight__label {
+  .radio-checkbox()
+}
+
+.opinion, .sight {
+  margin-bottom: 49px;
+  gap: 16px;
+}
+
+.emotions {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.emotions__subscription {
+  margin: 0;
+  padding: 16px;
+  width: 280px;
+  height: 150px;
+  border: none;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  margin-bottom: 56px;
+  &::placeholder {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.review__button {
+  padding: 0;
+  width: 280px;
+  padding-top: 19px;
+  padding-bottom: 14px;
+}
+
+.required-inputs {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: end;
+}

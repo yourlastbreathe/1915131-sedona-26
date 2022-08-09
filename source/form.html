@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Фото и Видео</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -35,26 +36,26 @@
       <h2 class="review__title">Оставьте свой отзыв</h2>
       <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
         достопримечательностях</p>
-      <form class="review__form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="name">
-          <legend class="name__title">Представьтесь:</legend>
-          <label class="name__label name__label--first-name" for="first-name">Имя*:</label>
-          <input class="name__input name__input--first-name" type="text" id="first-name" name="first-name"
+      <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="review-form__fieldset">
+          <legend class="review-form__title">Представьтесь:</legend>
+          <label class="review-form__label review-form__label--first-name" for="first-name">Имя*:</label>
+          <input class="review-form__input review-form__input--first-name" type="text" id="first-name" name="first-name"
             placeholder="Петр" required>
-          <label class="name__label name__label--surname" for="surname">Фамилия*:</label>
-          <input class="name__input name__input--surname" type="text" id="surname" name="surname" placeholder="Пустота"
+          <label class="review-form__label review-form__label--surname" for="surname">Фамилия*:</label>
+          <input class="review-form__input review-form__input--surname" type="text" id="surname" name="surname" placeholder="Пустота"
             required>
-          <label class="name__label name__label--patronymic" for="patronymic">Отчество:</label>
-          <input class="name__input name__input--patronymic" type="text" id="patronymic" name="patronymic"
+          <label class="review-form__label review-form__label--patronymic" for="patronymic">Отчество:</label>
+          <input class="review-form__input review-form__input--patronymic" type="text" id="patronymic" name="patronymic"
             placeholder="Викторович">
         </fieldset>
-        <fieldset class="contacts">
-          <legend class="contacts__title">Контактная информация:</legend>
-          <label class="contacts__label contacts__label--phone" for="phone">Контактный телефон*:</label>
-          <input class="contacts__input contacts__input--phone" type="text" id="phone" name="phone"
+        <fieldset class="review-form__fieldset">
+          <legend class="review-form__title">Контактная информация:</legend>
+          <label class="review-form__label review-form__label--phone" for="phone">Контактный телефон*:</label>
+          <input class="review-form__input review-form__input--phone" type="text" id="phone" name="phone"
             placeholder="Введите телефон" required>
-          <label class="contacts__label contacts__label--email" for="email">Электронная почта*:</label>
-          <input class="contacts__input contacts__input--email" id="email" name="email" placeholder="Введите e-mail"
+          <label class="review-form__label review-form__label--email" for="email">Электронная почта*:</label>
+          <input class="review-form__input review-form__input--email" id="email" name="email" placeholder="Введите e-mail"
             required>
         </fieldset>
         <fieldset class="opinion">
