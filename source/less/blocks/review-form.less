@@ -1,0 +1,34 @@
+.review-form__label {
+  text-transform: uppercase;
+  text-align: start;
+  color: #333333;
+}
+
+.review-form__input {
+  width: 280px;
+  background-color: #f2f2f2;
+  padding: 16px 100px 16px 16px;
+  box-sizing: border-box;
+  border: none;
+  &::placeholder {
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.review-form__fieldset {
+  .fieldset();
+  margin-bottom: 64px;
+}
+
+.review-form__input--email, .review-form__input--phone {
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.review-form__title {
+  .form-title();
+}
