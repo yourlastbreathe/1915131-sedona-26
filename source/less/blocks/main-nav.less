@@ -19,3 +19,38 @@
   text-transform: uppercase;
   color: #ffffff;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__item {
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 21px;
+    width: 153px;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    box-sizing: border-box;
+  }
+
+  .main-nav__item:nth-child(2) {
+    margin-right: 153px;
+  }
+
+  .main-nav__link {
+    color: #000000;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__item {
+    width: 240px;
+  }
+
+  .main-nav__item:nth-child(2) {
+    margin-right: 240px;
+  }
+
+}

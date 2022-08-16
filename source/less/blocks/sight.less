@@ -11,3 +11,18 @@
 .sight__label {
   .radio-checkbox();
 }
+
+@media (min-width: @tablet-width) {
+  .sight {
+    display: grid;
+    grid-template-columns: 280px 280px;
+    gap: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sight {
+    grid-template-columns: 170px 170px 170px 170px;
+    column-gap: 64px;
+  }
+}

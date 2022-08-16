@@ -12,3 +12,17 @@
   .radio-checkbox();
 }
 
+@media (min-width: @tablet-width) {
+  .opinion {
+    display: grid;
+    grid-template-columns: 280px 280px;
+    gap: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .opinion {
+    grid-template-columns: 280px 280px 280px;
+    column-gap: 28px;
+  }
+}

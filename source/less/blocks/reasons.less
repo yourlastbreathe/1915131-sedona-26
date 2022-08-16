@@ -30,3 +30,27 @@
   padding: 0;
   background-color: #eeeeee;
 }
+
+@media (min-width: @tablet-width) {
+  .reasons__box {
+    display: flex;
+  }
+
+  .reasons__wrapper {
+    width: 256px;
+  }
+
+  .reasons__wrapper--bridge {
+    order: 2;
+  }
+
+  .reasons__list {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reasons__wrapper {
+    width: 400px;
+  }
+}

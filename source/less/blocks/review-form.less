@@ -32,3 +32,21 @@
 .review-form__title {
   .form-title();
 }
+
+@media (min-width: @tablet-width) {
+  .review-form__wrapper {
+    display: grid;
+    grid-template-columns: 384px 384px;
+    grid-template-rows: 58px 58px 58px 58px;
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review-form__wrapper {
+    display: grid;
+    grid-template-columns: 613px 586px;
+    grid-template-rows: 58px 58px 58px 58px;
+    margin-bottom: 71px;
+  }
+}
