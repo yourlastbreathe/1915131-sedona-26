@@ -17,4 +17,40 @@
 .photo__wrapper {
   padding: 25px 20px;
   text-align: start;
+  border-top: solid 1px #E5E5E5;
+  border-bottom: solid 1px #E5E5E5;
+}
+
+.photo-video {
+  margin-top: 33px;
+  margin-bottom: 20px;
+}
+
+.video {
+  margin-top: 17px;
+  margin-bottom: 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .photo {
+    display: grid;
+    grid-template-columns: 324px 324px;
+  }
+
+  .photo__wrapper--spaces {
+    grid-column: 1 / -1;
+  }
+
+  .photo__wrapper {
+    background-color: #f2f2f2;
+    padding: 0;
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+  }
 }

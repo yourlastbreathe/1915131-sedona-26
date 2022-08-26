@@ -1,15 +1,16 @@
 .booking {
-  padding-top: 38px;
-  padding-bottom: 49px;
+  padding: 38px 18px 49px 18px;
   text-transform: uppercase;
 }
 
 .booking__title {
   margin: 0;
+  margin-bottom: 26px;
 }
 
 .booking__description {
   margin: 0;
+  margin-bottom: 32px;
 }
 
 
@@ -17,4 +18,29 @@
   padding-top: 16px;
   padding-bottom: 16px;
   width: 284px;
+}
+
+@media (min-width: @tablet-width) {
+  .booking {
+    padding: 61px 155px 58px 155px;
+  }
+
+  .booking__title {
+    margin-bottom: 41px;
+  }
+
+  .booking__description {
+    margin-bottom: 41px;
+  }
+
+  .booking__button {
+    width: 458px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .booking {
+    padding-top: 61px;
+    padding-bottom: 66px;
+  }
 }
