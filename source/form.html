@@ -33,7 +33,14 @@
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Седона</h1>
-      <img class="catalog-sedona-image" src="img/sedona-catalog.jpg" width="320" height="158" alt="Седона.">
+      <picture>
+        <source media="(min-width: 1200px)"
+          srcset="img/sedona-catalog-desktop.jpg 1x, img/sedona-catalog-desktop@2x.jpg 2x" width="1200">
+        <source media="(min-width: 768px)"
+          srcset="img/sedona-catalog-tablet.jpg 1x, img/sedona-catalog-tablet@2x.jpg 2x" width="768px">
+        <img class="catalog-sedona-image" src="img/sedona-catalog.jpg" width="320" height="214"
+          srcset="img/sedona_catalog@2x.jpg 2x" alt="Седона.">
+      </picture>
       <section class="review">
         <h2 class="review__title">Оставьте свой отзыв</h2>
         <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных

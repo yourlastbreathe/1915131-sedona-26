@@ -33,7 +33,14 @@
     </header>
     <main class="main-container main-container--catalog">
       <h1 class="visually-hidden">Седона</h1>
-      <img class="catalog-sedona-image" src="img/sedona-catalog.jpg" width="320" height="158" alt="Седона.">
+      <picture>
+        <source media="(min-width: 1200px)"
+          srcset="img/sedona-catalog-desktop.jpg 1x, img/sedona-catalog-desktop@2x.jpg 2x" width="1200">
+        <source media="(min-width: 768px)"
+          srcset="img/sedona-catalog-tablet.jpg 1x, img/sedona-catalog-tablet@2x.jpg 2x" width="768px">
+        <img class="catalog-sedona-image" src="img/sedona-catalog.jpg" width="320" height="214"
+          srcset="img/sedona_catalog@2x.jpg 2x" alt="Седона.">
+      </picture>
       <section class="photo-video">
         <h2 class="photo-video__title">Фото и Видео</h2>
         <p class="photo-video__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть
@@ -42,25 +49,55 @@
       </section>
       <section class="photo">
         <div class="photo__wrapper photo__wrapper--spaces">
-          <img class="photo__image" src="img/sunshine.jpg" width="280" height="280" alt="Закат.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/sunshine-desktop.jpg 1x, img/sunshine-desktop@2x.jpg 2x" width="1200"
+              height="400">
+            <source media="(min-width: 768px)" srcset="img/sunshine-tablet.jpg 1x, img/sunshine-tablet@2x.jpg 2x" width="648"
+              height="400">
+            <img class="photo__image photo__image--sunshine" src="img/sunshine.jpg" width="280" height="280" srcset="img/sunshine@2x.jpg 2x"
+              alt="Закат.">
+          </picture>
+          <div class="photo__box">
           <h3 class="photo__title">Неродные просторы</h3>
           <p class="photo__description">Автор фото: Борис</p>
           <p class="photo__likes-number">1350</p>
+          </div>
         </div>
         <div class="photo__wrapper">
-          <img class="photo__image" src="img/plants.jpg" width="280" height="280" alt="Растение.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/plants-desktop.jpg 1x, img/plants-desktop@2x.jpg 2x" width="400"
+              height="267">
+            <source media="(min-width: 768px)" srcset="img/plants-tablet.jpg 1x, img/plants-tablet@2x.jpg 2x"
+              width="324" height="267">
+            <img class="photo__image" src="img/plants.jpg" width="280" height="280" srcset="img/plants@2x.jpg 2x"
+              alt="Растение.">
+          </picture>
           <h3 class="photo__title">Местная растительность</h3>
           <p class="photo__description">Автор фото: Сергей</p>
           <p class="photo__likes-number">143</p>
         </div>
         <div class="photo__wrapper">
-          <img class="photo__image" src="img/road.jpg" width="280" height="280" alt="Дорога.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/road-desktop.jpg 1x, img/road-desktop@2x.jpg 2x" width="400"
+              height="267">
+            <source media="(min-width: 768px)" srcset="img/road-tablet.jpg 1x, img/road-tablet@2x.jpg 2x" width="324"
+              height="267">
+            <img class="photo__image" src="img/road.jpg" width="280" height="280" srcset="img/road@2x.jpg 2x"
+              alt="Дорога.">
+          </picture>
           <h3 class="photo__title">Дорога на север</h3>
           <p class="photo__description">Автор фото: Петр</p>
           <p class="photo__likes-number">96</p>
         </div>
         <div class="photo__wrapper">
-          <img class="photo__image" src="img/bridge-catalog.jpg" width="280" height="280" alt="Мост дьявола.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/catalog-bridge-desktop.jpg 1x, img/catalog-bridge-desktop@2x.jpg 2x" width="400"
+              height="267">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-bridge-tablet.jpg 1x, img/catalog-bridge-tablet@2x.jpg 2x" width="324" height="267">
+            <img class="photo__image" src="img/bridge-catalog.jpg" width="280" height="280"
+              srcset="img/bridge-catalog@2x.jpg 2x" alt="Мост дьявола.">
+          </picture>
           <h3 class="photo__title">Мост дьявола</h3>
           <p class="photo__description">Автор фото: Антон</p>
           <p class="photo__likes-number">254</p>
