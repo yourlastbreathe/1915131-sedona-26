@@ -53,6 +53,7 @@
             <p class="reasons__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/town_desktop.webp 1x, img/town_desktop@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/town_desktop.jpg 1x, img/town_desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/town_tablet.jpg 1x, img/town_tablet@2x.jpg 2x">
             <img class="reasons__image" src="img/town.jpg" width="320" height="260" srcset="img/town@2x.jpg 2x"
@@ -82,6 +83,7 @@
             <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/bridge_desktop.webp 1x, img/bridge_desktop@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/bridge_desktop.jpg 1x, img/bridge_desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/bridge_tablet.jpg 1x, img/bridge_tablet@2x.jpg 2x">
             <img class="reasons__image" src="img/bridge.jpg" width="320" height="260" srcset="img/bridge@2x.jpg 2x"
@@ -139,7 +141,9 @@
         <h3 class="visually-hidden">Разработчик</h3>
         <div class="development__wrapper">
           <p class="development__description">Разработано</p>
-          <img class="html-logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML-Academy.">
+          <svg width="28" height="33">
+            <use href="img/sprite.svg#html-icon"></use>
+          </svg>
         </div>
       </section>
     </footer>
