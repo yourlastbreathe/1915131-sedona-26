@@ -8,8 +8,30 @@
   .form-title();
 }
 
-.opinion__label {
+.opinion__control {
   .radio-checkbox();
+  position: relative;
+}
+
+.opinion__label {
+  margin-left: 82px;
+}
+
+.opinion__radio {
+  position: absolute;
+    top: 2px;
+    left: 0;
+    width: 46px;
+    height: 46px;
+    border: none;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+}
+
+.opinion__box {
+  display: grid;
+  row-gap: 26px;
+  margin-top: 16px;
 }
 
 @media (min-width: @tablet-width) {
@@ -21,7 +43,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .opinion {
+  .opinion__box {
     grid-template-columns: 280px 280px 280px;
     column-gap: 28px;
   }

@@ -1,7 +1,6 @@
 .sight {
   .fieldset();
   margin-bottom: 49px;
-  gap: 16px;
 }
 
 .sight__title {
@@ -10,6 +9,29 @@
 
 .sight__label {
   .radio-checkbox();
+  margin-left: 82px;
+}
+
+.sight__checkbox {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 46px;
+    height: 46px;
+    border: none;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+}
+
+.sight__control {
+  position: relative;
+  display: block;
+}
+
+.sight__box {
+  display: grid;
+  row-gap: 26px;
+  margin-top: 16px;
 }
 
 @media (min-width: @tablet-width) {
@@ -21,8 +43,19 @@
 }
 
 @media (min-width: @desktop-width) {
-  .sight {
+  .sight__box {
     grid-template-columns: 170px 170px 170px 170px;
     grid-column-gap: 64px;
+    padding-left: 120px;
+    padding-right: 120px;
+    text-align: center;
+  }
+
+  .sight__label {
+    margin: 0;
+  }
+
+  .sight__checkbox {
+    left: -30px;
   }
 }
