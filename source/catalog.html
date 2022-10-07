@@ -56,49 +56,65 @@
               srcset="img/sunshine@2x.jpg 2x" alt="Закат.">
           </picture>
           <div class="photo__box">
-            <h3 class="photo__title">Неродные просторы</h3>
-            <p class="photo__description">Автор фото: Борис</p>
-            <button class="photo__likes-button" type="button">
-              <svg width="23" height="21">
-                <use href="img/sprite.svg#like-icon"></use>
-              </svg>
-            </button>
-            <p class="photo__likes-number">1350</p>
+            <div class="photo__box--description">
+              <h3 class="photo__title">Неродные просторы</h3>
+              <p class="photo__description">Автор фото: Борис</p>
+            </div>
+            <div class="photo__box--likes">
+              <button class="photo__likes-button" type="button">
+                <svg width="23" height="21">
+                  <use href="img/sprite.svg#like-icon"></use>
+                </svg>
+              </button>
+              <p class="photo__likes-number">1350</p>
+            </div>
           </div>
         </div>
-        <div class="photo__wrapper">
+        <div class="photo__wrapper photo__wrapper--plants">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/plants-desktop.jpg 1x, img/plants-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/plants-tablet.jpg 1x, img/plants-tablet@2x.jpg 2x">
             <img class="photo__image" src="img/plants.jpg" width="280" height="280" srcset="img/plants@2x.jpg 2x"
               alt="Растение.">
           </picture>
-          <h3 class="photo__title">Местная растительность</h3>
-          <p class="photo__description">Автор фото: Сергей</p>
-          <button class="photo__likes-button" type="button">
-            <svg width="23" height="21">
-              <use href="img/sprite.svg#like-icon"></use>
-            </svg>
-          </button>
-          <p class="photo__likes-number">143</p>
+          <div class="photo__box">
+            <div class="photo__box--description">
+              <h3 class="photo__title">Местная растительность</h3>
+              <p class="photo__description">Автор фото: Сергей</p>
+            </div>
+            <div class="photo__box--likes">
+              <button class="photo__likes-button" type="button">
+                <svg width="23" height="21">
+                  <use href="img/sprite.svg#like-icon"></use>
+                </svg>
+              </button>
+              <p class="photo__likes-number">143</p>
+            </div>
+          </div>
         </div>
-        <div class="photo__wrapper">
+        <div class="photo__wrapper photo__wrapper--road">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/road-desktop.jpg 1x, img/road-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/road-tablet.jpg 1x, img/road-tablet@2x.jpg 2x">
             <img class="photo__image" src="img/road.jpg" width="280" height="280" srcset="img/road@2x.jpg 2x"
               alt="Дорога.">
           </picture>
-          <h3 class="photo__title">Дорога на север</h3>
-          <p class="photo__description">Автор фото: Петр</p>
-          <button class="photo__likes-button" type="button">
-            <svg width="23" height="21">
-              <use href="img/sprite.svg#like-icon"></use>
-            </svg>
-          </button>
-          <p class="photo__likes-number">96</p>
+          <div class="photo__box">
+            <div class="photo__box--description">
+              <h3 class="photo__title">Дорога на север</h3>
+              <p class="photo__description">Автор фото: Петр</p>
+            </div>
+            <div class="photo__box--likes">
+              <button class="photo__likes-button" type="button">
+                <svg width="23" height="21">
+                  <use href="img/sprite.svg#like-icon"></use>
+                </svg>
+              </button>
+              <p class="photo__likes-number">96</p>
+            </div>
+          </div>
         </div>
-        <div class="photo__wrapper">
+        <div class="photo__wrapper photo__wrapper--bridge">
           <picture>
             <source media="(min-width: 1200px)"
               srcset="img/catalog-bridge-desktop.jpg 1x, img/catalog-bridge-desktop@2x.jpg 2x">
@@ -107,14 +123,20 @@
             <img class="photo__image" src="img/bridge-catalog.jpg" width="280" height="280"
               srcset="img/bridge-catalog@2x.jpg 2x" alt="Мост дьявола.">
           </picture>
-          <h3 class="photo__title">Мост дьявола</h3>
-          <p class="photo__description">Автор фото: Антон</p>
-          <button class="photo__likes-button" type="button">
-            <svg width="23" height="21">
-              <use href="img/sprite.svg#like-icon"></use>
-            </svg>
-          </button>
-          <p class="photo__likes-number">254</p>
+          <div class="photo__box">
+            <div class="photo__box--description">
+              <h3 class="photo__title">Мост дьявола</h3>
+              <p class="photo__description">Автор фото: Антон</p>
+            </div>
+            <div class="photo__box--likes">
+              <button class="photo__likes-button" type="button">
+                <svg width="23" height="21">
+                  <use href="img/sprite.svg#like-icon"></use>
+                </svg>
+              </button>
+              <p class="photo__likes-number">254</p>
+            </div>
+          </div>
         </div>
       </section>
       <section class="video">
