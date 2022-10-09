@@ -1,5 +1,6 @@
 .video {
   text-transform: uppercase;
+  margin-bottom: 38px;
 }
 
 .video__title {
@@ -12,4 +13,22 @@
 .video__description {
   margin: 0;
   padding: 0 30px;
+  margin-bottom: 38px;
+}
+
+.video__link {
+  display: block;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url(../img/play.svg);
+    position: absolute;
+    width: 48px;
+    height: 54px;
+    display: block;
+    left: 53%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
