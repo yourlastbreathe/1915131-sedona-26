@@ -2,14 +2,21 @@
   text-transform: uppercase;
   text-align: start;
   color: #333333;
+  position: absolute;
+  top: -20px;
+  left: 17px;
 }
 
 .review-form__input {
+  font-family: "PT Sans", sans-serif;
   width: 280px;
   background-color: #f2f2f2;
   padding: 16px 100px 16px 16px;
   box-sizing: border-box;
   border: none;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 37px;
 
   &::placeholder {
     color: #000000;
@@ -19,9 +26,15 @@
   }
 }
 
+.review-form__input--patronymic, .review-form__input--email {
+  margin-bottom: 0;
+}
+
 .review-form__fieldset {
   .fieldset();
-  margin-bottom: 64px;
+  padding-bottom: 36px;
+  margin-bottom: 26px;
+  text-align: center;
 }
 
 .review-form__input--email,
@@ -33,6 +46,11 @@
 
 .review-form__title {
   .form-title();
+  margin-bottom: 42px;
+}
+
+.review-form__box {
+  position: relative;
 }
 
 @media (min-width: @tablet-width) {
