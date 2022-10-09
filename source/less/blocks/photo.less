@@ -8,22 +8,21 @@
 .photo__description {
   margin: 0;
   color: #333333;
+  margin-bottom: 12px;
 }
 
 .photo__likes-number {
   font-weight: 700;
+  margin: 0;
+  margin-left: 15px;
+  margin-top: 5px;
 }
 
 .photo__wrapper {
-  padding: 25px 20px;
+  padding: 24px 20px;
   text-align: start;
   border-top: solid 1px #e5e5e5;
   border-bottom: solid 1px #e5e5e5;
-}
-
-.photo-video {
-  margin-top: 33px;
-  margin-bottom: 20px;
 }
 
 .video {
@@ -35,11 +34,19 @@
   display: block;
   width: 100%;
   height: auto;
+  margin-bottom: 15px;
 }
 
 .photo__likes-button {
   border: none;
   cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+  opacity: 0.3;
+}
+
+.photo__box--likes {
+  display: flex;
 }
 
 @media (min-width: @tablet-width) {

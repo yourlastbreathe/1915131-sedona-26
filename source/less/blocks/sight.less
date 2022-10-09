@@ -36,6 +36,18 @@
   row-gap: 16px;
 }
 
+.sight__input:checked+.sight__checkbox::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/check.svg);
+  background-repeat: no-repeat;
+}
+
 @media (min-width: @tablet-width) {
   .sight__box {
     padding: 0 84px;
@@ -55,17 +67,14 @@
 
 @media (min-width: @desktop-width) {
   .sight__box {
-    grid-template-columns: 170px 170px 170px 170px;
-    grid-column-gap: 64px;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 64px;
     text-align: center;
+    padding: 0 44.5px;
   }
 
   .sight__label {
-    margin: 0;
-  }
-
-  .sight__checkbox {
-    left: -30px;
+    margin-left: 16px;
   }
 
   .sight__title {

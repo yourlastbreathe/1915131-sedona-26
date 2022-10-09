@@ -37,6 +37,18 @@
   row-gap: 16px;
 }
 
+.opinion__input:checked+.opinion__radio::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/round.svg);
+  background-repeat: no-repeat;
+}
+
 @media (min-width: @tablet-width) {
   .opinion {
     display: grid;
@@ -62,7 +74,7 @@
 
  .opinion__box {
   grid-template-columns: 280px 280px 280px;
-  padding: 0 53px;
+  padding: 0 0 0 53px;
   grid-gap: 28px;
  }
 

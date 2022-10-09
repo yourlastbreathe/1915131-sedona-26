@@ -33,8 +33,12 @@
     </header>
     <main class="main-container main-container--catalog">
       <h1 class="visually-hidden">Седона</h1>
-      <div class="intro">
-        <img class="intro__image" src="img/sedona.svg" width="229" height="39">
+      <div class="intro intro--catalog">
+        <picture>
+          <source media="(min-width: 1200px" srcset="img/sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/sedona-tablet.svg">
+          <img class="intro__image" src="img/sedona.svg">
+        </picture>
       </div>
       <section class="photo-video">
         <h2 class="photo-video__title">Фото и Видео</h2>
@@ -136,7 +140,7 @@
       </section>
       <section class="video">
         <h2 class="video__title">Все еще сомневаетесь?</h2>
-        <p class="video__description">Смотрите презентацию и скорее за билетами, пока они не подорожали в очередной раз!
+        <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
       </section>
     </main>
