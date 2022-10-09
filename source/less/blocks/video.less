@@ -1,6 +1,6 @@
 .video {
   text-transform: uppercase;
-  margin-bottom: 38px;
+  margin-bottom: -8px;
 }
 
 .video__title {
@@ -30,5 +30,38 @@
     left: 53%;
     top: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .video__title {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+
+  .video__description {
+    padding: 0 160px;
+    margin-bottom: 89px;
+  }
+
+  .video {
+    margin-bottom: 38px;
+  }
+
+  .video__link {
+    &::after {
+      left: 50%;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .video__description {
+    padding: 0 375px;
+    margin-bottom: 89px;
+  }
+
+  .video {
+    margin-bottom: 77px;
   }
 }
