@@ -1,9 +1,10 @@
 .opinion {
   .fieldset();
-  padding-bottom: 27px;
-  margin-bottom: 31px;
+  padding-bottom: 23px;
+  margin-bottom: 0;
   gap: 16px;
-  text-align: center
+  text-align: center;
+  position: relative;
 }
 
 .opinion__title {
@@ -14,16 +15,16 @@
 .opinion__control {
   .radio-checkbox();
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .opinion__label {
-  margin-left: 22px;
+  margin-left: 17px;
 }
 
 .opinion__radio {
-  position: absolute;
-  top: -11px;
-  left: -2px;
+  position: relative;
   width: 46px;
   height: 46px;
   border: none;
@@ -33,23 +34,39 @@
 
 .opinion__box {
   display: grid;
-  row-gap: 36px;
-  margin-top: 16px;
+  row-gap: 16px;
 }
 
 @media (min-width: @tablet-width) {
   .opinion {
     display: grid;
+    margin-bottom: 48px;
+  }
+
+  .opinion__title {
+    width: 402px;
+  }
+
+  .opinion__box {
+    padding: 0 36px;
+    display: grid;
+    grid-gap: 16px;
     grid-template-columns: 280px 280px;
-    gap: 16px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .opinion__box {
-    grid-template-columns: 280px 280px 280px;
-    column-gap: 28px;
-    padding-left: 235px;
-    padding-right: 173px;
-  }
+ .opinion__title {
+  margin-bottom: 45px;
+ }
+
+ .opinion__box {
+  grid-template-columns: 280px 280px 280px;
+  padding: 0 53px;
+  grid-gap: 28px;
+ }
+
+ .opinion {
+  margin-bottom: 74px;
+ }
 }

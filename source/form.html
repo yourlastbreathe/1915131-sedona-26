@@ -35,9 +35,9 @@
       <h1 class="visually-hidden">Седона</h1>
       <div class="intro">
         <picture>
-          <source media="(min-width: 768px)"
-          srcset="img/sedona-tablet.svg">
-        <img class="intro__image" src="img/sedona.svg" width="229" height="39">
+          <source media="(min-width: 1200px" srcset="img/sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/sedona-tablet.svg">
+          <img class="intro__image" src="img/sedona.svg">
         </picture>
       </div>
       <section class="review">
@@ -131,8 +131,10 @@
             <textarea class="emotions__subscription" name="message"
               placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button class="review__button button" type="submit">Отправить отзыв</button>
-          <p class="required-inputs">* - обязательные поля</p>
+          <div class="review__button-wrapper">
+            <button class="review__button button" type="submit">Отправить отзыв</button>
+            <p class="review__required-inputs">* — обязательные поля</p>
+          </div>
         </form>
       </section>
     </main>

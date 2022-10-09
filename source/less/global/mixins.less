@@ -1,9 +1,16 @@
 .fieldset() {
-  display: grid;
-  grid-template-columns: 280px;
   border: none;
-  padding: 0;
+  padding: 0 20px;
+  margin: 0 -20px;
   text-align: start;
+  position: relative;
+  padding-top: 70px;
+  border-top: 1px solid #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .form-title() {
@@ -12,7 +19,19 @@
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 24px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    top: 0;
+    margin-bottom: 28px;
+    font-size: 21px;
+  }
 }
+
 
 .radio-checkbox() {
   font-weight: 700;
